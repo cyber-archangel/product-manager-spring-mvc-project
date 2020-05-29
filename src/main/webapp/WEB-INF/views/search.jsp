@@ -6,18 +6,13 @@
 
 <html>
 <head>
-    <title>Product Manager</title>
+    <title>Search Result</title>
 </head>
 
 <body>
 
 <div class="products" align="center">
-    <h1>Product Manager</h1>
-    <form method="get" action="search">
-        <input type="text" name="keyword" placeholder="Name"/>
-        <input type="submit" value="Submit"/>
-    </form>
-    <h3><a href="new">New Product</a></h3>
+    <h1>Search Result</h1>
     <table border="1" cellpadding="5">
         <tr>
             <th>ID</th>
@@ -25,16 +20,14 @@
             <th>Brand</th>
             <th>Country</th>
             <th>Price</th>
-            <th>Action</th>
         </tr>
-        <c:forEach var="product" items="${products}">
+        <c:forEach var="product" items="${result}">
             <tr>
                 <td>${product.id}</td>
                 <td>${product.name}</td>
                 <td>${product.brand}</td>
                 <td>${product.country}</td>
                 <td>${product.price}</td>
-                <td><a href="delete?id=${product.id}">Delete</a></td>
             </tr>
         </c:forEach>
     </table>

@@ -16,8 +16,16 @@ public class ProductService {
         this.productDataAccessObject = productDataAccessObject;
     }
 
+    public List<Product> getSearchResult(String keyword) {
+        return productDataAccessObject.getSearchResult(keyword);
+    }
+
     public List<Product> getProductList() {
         return productDataAccessObject.getProductList();
+    }
+
+    public Product getProductById(int id) {
+        return productDataAccessObject.getProductById(id);
     }
 
     public void save(Product product) {
@@ -26,9 +34,5 @@ public class ProductService {
 
     public void delete(Product product) {
         productDataAccessObject.delete(product);
-    }
-
-    public void update(Product product) {
-        productDataAccessObject.update(product);
     }
 }
