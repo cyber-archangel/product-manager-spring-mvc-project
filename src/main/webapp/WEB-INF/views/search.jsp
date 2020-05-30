@@ -8,7 +8,6 @@
 <head>
     <title>Search Result</title>
 </head>
-
 <body>
 
 <div class="products">
@@ -34,5 +33,4 @@
 </div>
 
 </body>
-
 </html>

@@ -8,7 +8,6 @@
 <head>
     <title>Product Manager</title>
 </head>
-
 <body>
 
 <div class="products">
@@ -41,5 +40,4 @@
 </div>
 
 </body>
-
 </html>

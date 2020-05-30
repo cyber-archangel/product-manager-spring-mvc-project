@@ -8,7 +8,6 @@
 <head>
     <title>New Product</title>
 </head>
-
 <body>
 
 <div class="new">
@@ -39,5 +38,4 @@
 </div>
 
 </body>
-
 </html>
