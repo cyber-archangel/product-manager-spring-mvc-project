@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: black;
+}
+
+h1 {
+    margin: 20px auto;
+    color: orange;
+}
+
+input {
+    margin: 5px;
+    height: 25px;
+}
+
+input[type="text"] {
+    width: 325px;
+    text-align: center;
+    color: white;
+    border: 2px solid orange;
+    background: black;
+}
+
+input[type="submit"] {
+    width: 75px;
+    text-align: center;
+    color: white;
+    border: 2px solid orange;
+    background: black;
+}
+
+input[type="submit"]:hover {
+    background: orange;
+    cursor: pointer;
+}
+
+a {
+    color: orange;
+}
+
+a:hover {
+    color: white;
+}
+
+h3 a {
+    top: 40%;
+    left: 46%;
+    position: absolute;
+}
+
+.products h1, .new h1 {
+    width: 100%;
+    top: 15%;
+    position: absolute;
+    text-align: center;
+    font-size: 35px;
+    color: orange;
+}
+
+.products input[type="text"] {
+    top: 27%;
+    left: 38.5%;
+    position: absolute;
+}
+
+.products input[type="submit"] {
+    top: 33%;
+    left: 47%;
+    position: absolute;
+}
+
+.products table {
+    width: 725px;
+    top: 45%;
+    left: 25%;
+    position: absolute;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid orange;
+    background: #191919;
+    color: orange;
+}
+
+.products table tbody {
+    display: block;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.products table thead, .products table tbody tr {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.products th {
+    padding: 10px 15px;
+    color: white;
+    border-bottom: 2px solid orange;
+}
+
+.products td {
+    color: orange;
+    padding: 5px 15px;
+}
+
+.products td:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.new table {
+    width: 475px;
+    height: 350px;
+    top: 33%;
+    left: 33%;
+    position: absolute;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid orange;
+    background: #191919;
+    color: orange;
+}
+
+.new td {
+    margin: 5px;
+}
+
+.error {
+    width: 100%;
+    top: 40%;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    color: orange;
+}

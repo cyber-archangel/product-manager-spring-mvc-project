@@ -49,4 +49,9 @@ public class ProductController {
         productService.delete(productService.getProductById(id));
         return "redirect:home";
     }
+
+    @ExceptionHandler(Exception.class)
+    public String error() {
+        return "error";
+    }
 }

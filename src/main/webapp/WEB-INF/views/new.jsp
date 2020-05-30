@@ -2,6 +2,8 @@
 
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
+<style type="text/css"><%@include file="styles/styles.css"%></style>
+
 <html>
 <head>
     <title>New Product</title>
@@ -9,10 +11,10 @@
 
 <body>
 
-<div align="center">
+<div class="new">
     <h1>New Product</h1>
     <form:form action="save" method="post" modelAttribute="product">
-        <table border="0" cellpadding="5">
+        <table>
             <tr>
                 <td>Name:</td>
                 <td><form:input path="name"/></td>

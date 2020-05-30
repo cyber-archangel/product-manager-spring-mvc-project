@@ -2,7 +2,7 @@
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<link href="styles/styles.css" rel="stylesheet" type="text/css">
+<style type="text/css"><%@include file="styles/styles.css"%></style>
 
 <html>
 <head>
@@ -11,14 +11,14 @@
 
 <body>
 
-<div class="products" align="center">
+<div class="products">
     <h1>Product Manager</h1>
     <form method="get" action="search">
         <input type="text" name="keyword" placeholder="Name"/>
         <input type="submit" value="Submit"/>
     </form>
     <h3><a href="new">New Product</a></h3>
-    <table border="1" cellpadding="5">
+    <table>
         <tr>
             <th>ID</th>
             <th>Name</th>

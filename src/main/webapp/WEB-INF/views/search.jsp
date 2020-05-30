@@ -2,7 +2,7 @@
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<link href="styles/styles.css" rel="stylesheet" type="text/css">
+<style type="text/css"><%@include file="styles/styles.css"%></style>
 
 <html>
 <head>
@@ -11,9 +11,9 @@
 
 <body>
 
-<div class="products" align="center">
+<div class="products">
     <h1>Search Result</h1>
-    <table border="1" cellpadding="5">
+    <table>
         <tr>
             <th>ID</th>
             <th>Name</th>
