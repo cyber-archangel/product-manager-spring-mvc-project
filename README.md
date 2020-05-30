@@ -16,8 +16,8 @@ The user gets to the home page, where is the list of products and all tools for 
 <li>Java + HTML + CSS</li>
 <li>Spring MVC</li>
 <li>Hibernate</li>
-<li>Maven</li>
 <li>MySQL</li>
+<li>Maven</li>
 <li>JSP + JSTL</li>
 <li>Tomcat</li>
 </ul>
