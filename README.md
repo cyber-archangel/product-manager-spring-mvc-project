@@ -6,7 +6,7 @@
     <ul>
       <li>Model: Hibernate entinites and database interactions.</li>
       <li>View: JSP pages and styles.</li>
-      <li>Controller: Spring MVC controllers.</li>
+      <li>Controller: Spring MVC controller.</li>
     </ul>
 <li><h2>View</h2>
 All interactions take place in a web browser, directly on the website of this web application.
