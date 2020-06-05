@@ -19,6 +19,7 @@ The user gets to the home page, where is the list of products and all tools for 
 <li>MySQL</li>
 <li>Maven</li>
 <li>JSP + JSTL</li>
+<li>slf4j</li>
 <li>Tomcat</li>
 </ul>
 </li>
