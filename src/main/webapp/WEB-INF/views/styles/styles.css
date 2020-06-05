@@ -7,7 +7,7 @@ body {
 
 h1 {
     margin: 20px auto;
-    color: orange;
+    color: mediumaquamarine;
 }
 
 input {
@@ -19,7 +19,7 @@ input[type="text"] {
     width: 325px;
     text-align: center;
     color: white;
-    border: 2px solid orange;
+    border: 2px solid mediumaquamarine;
     background: black;
 }
 
@@ -27,17 +27,17 @@ input[type="submit"] {
     width: 75px;
     text-align: center;
     color: white;
-    border: 2px solid orange;
+    border: 2px solid mediumaquamarine;
     background: black;
 }
 
 input[type="submit"]:hover {
-    background: orange;
+    background: mediumaquamarine;
     cursor: pointer;
 }
 
 a {
-    color: orange;
+    color: mediumaquamarine;
 }
 
 a:hover {
@@ -56,7 +56,7 @@ h3 a {
     position: absolute;
     text-align: center;
     font-size: 35px;
-    color: orange;
+    color: mediumaquamarine;
 }
 
 .products input[type="text"] {
@@ -78,9 +78,9 @@ h3 a {
     position: absolute;
     text-align: center;
     border-collapse: collapse;
-    border: 2px solid orange;
+    border: 2px solid mediumaquamarine;
     background: #191919;
-    color: orange;
+    color: mediumaquamarine;
 }
 
 .products table tbody {
@@ -98,11 +98,11 @@ h3 a {
 .products th {
     padding: 10px 15px;
     color: white;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid mediumaquamarine;
 }
 
 .products td {
-    color: orange;
+    color: mediumaquamarine;
     padding: 5px 15px;
 }
 
@@ -119,9 +119,9 @@ h3 a {
     position: absolute;
     text-align: center;
     border-collapse: collapse;
-    border: 2px solid orange;
+    border: 2px solid mediumaquamarine;
     background: #191919;
-    color: orange;
+    color: mediumaquamarine;
 }
 
 .new td {
@@ -134,5 +134,5 @@ h3 a {
     position: absolute;
     text-align: center;
     font-size: 30px;
-    color: orange;
+    color: mediumaquamarine;
 }

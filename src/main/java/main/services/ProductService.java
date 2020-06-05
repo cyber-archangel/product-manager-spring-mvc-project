@@ -1,9 +1,9 @@
-package main.database;
+package main.services;
 
 import java.util.List;
 import main.models.*;
 
-public interface ProductDataAccessObject {
+public interface ProductService {
 
     List<Product> getSearchResult(String keyword);
 
