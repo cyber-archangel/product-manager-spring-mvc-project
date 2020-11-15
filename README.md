@@ -24,7 +24,7 @@ The user gets to the home page, where is the list of products and all tools for 
 </ul>
 </li>
 <li><h2>Database</h2>
-The main entity is Product, each field of which is marked in accordance with the name of this field in the database.
+The app entity is Product, each field of which is marked in accordance with the name of this field in the database.
 <li><h2>Additions</h2>
 This is my first Spring MVC & Hibernate web project, where I mastered my skills in using these frameworks and prepared for a more detailed study of them.
 </li>

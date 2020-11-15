@@ -1,19 +1,20 @@
-package main.services;
+package app.service;
 
 import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
-import javax.transaction.Transactional;
 import java.util.List;
-import main.database.*;
-import main.models.*;
+
+import app.database.*;
+import app.model.*;
 
 @Service
 public class ProductServiceImplementation implements ProductService {
 
-    private final ProductDataAccessObject productDataAccessObject;
+    private final ProductDAO productDataAccessObject;
 
     @Autowired
-    public ProductServiceImplementation(ProductDataAccessObject productDataAccessObject) {
+    public ProductServiceImplementation(ProductDAO productDataAccessObject) {
         this.productDataAccessObject = productDataAccessObject;
     }
 

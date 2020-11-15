@@ -1,4 +1,4 @@
-package main.models;
+package app.model;
 
 import javax.persistence.*;
 

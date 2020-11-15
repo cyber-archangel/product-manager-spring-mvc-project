@@ -1,15 +1,16 @@
-package main.database;
+package app.database;
 
 import org.springframework.stereotype.Repository;
 import org.hibernate.*;
 import javax.persistence.TypedQuery;
 import java.util.List;
 import org.slf4j.*;
-import main.utils.*;
-import main.models.*;
+
+import app.util.*;
+import app.model.*;
 
 @Repository
-public class ProductDataAccessObjectImplementation implements ProductDataAccessObject {
+public class ProductDataAccessObjectImplementation implements ProductDAO {
 
     private static final Logger logger = LoggerFactory.getLogger(ProductDataAccessObjectImplementation.class);
 

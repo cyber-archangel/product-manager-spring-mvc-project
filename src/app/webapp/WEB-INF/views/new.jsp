@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8"%>
 
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
@@ -11,7 +11,9 @@
 <body>
 
 <div class="new">
+
     <h1>New Product</h1>
+
     <form:form action="save" method="post" modelAttribute="product">
         <table>
             <tr>
@@ -35,6 +37,7 @@
             </tr>
         </table>
     </form:form>
+
 </div>
 
 </body>

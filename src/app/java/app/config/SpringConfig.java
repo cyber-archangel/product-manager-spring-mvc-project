@@ -1,4 +1,4 @@
-package main.config;
+package app.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -8,7 +8,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("main")
+@ComponentScan("app")
 public class SpringConfig implements WebMvcConfigurer {
 
     private final ApplicationContext applicationContext;

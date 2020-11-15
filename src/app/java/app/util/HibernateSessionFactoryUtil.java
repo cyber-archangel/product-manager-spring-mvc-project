@@ -1,9 +1,10 @@
-package main.utils;
+package app.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
-import main.models.*;
+
+import app.model.*;
 
 public class HibernateSessionFactoryUtil {
 
@@ -14,13 +15,9 @@ public class HibernateSessionFactoryUtil {
     public static SessionFactory getSessionFactory() {
 
         if (sessionFactory == null) {
-
             Configuration configuration = new Configuration().configure();
-
             configuration.addAnnotatedClass(Product.class);
-
             StandardServiceRegistryBuilder registryBuilder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
-
             sessionFactory = configuration.buildSessionFactory(registryBuilder.build());
         }
 

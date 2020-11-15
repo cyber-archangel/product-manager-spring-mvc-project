@@ -1,9 +1,10 @@
-package main.database;
+package app.database;
 
 import java.util.List;
-import main.models.*;
 
-public interface ProductDataAccessObject {
+import app.model.*;
+
+public interface ProductDAO {
 
     List<Product> getSearchResult(String keyword);
 

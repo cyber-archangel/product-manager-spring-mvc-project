@@ -1,7 +1,8 @@
-package main.services;
+package app.service;
 
 import java.util.List;
-import main.models.*;
+
+import app.model.*;
 
 public interface ProductService {
 
