@@ -21,14 +21,14 @@ public class ProductController {
 
     @GetMapping("/home")
     public ModelAndView home() {
-        ModelAndView modelAndView = new ModelAndView("home");
+        var modelAndView = new ModelAndView("home");
         modelAndView.addObject("products", productService.getProductList());
         return modelAndView;
     }
 
     @GetMapping("/search")
     public ModelAndView search(@RequestParam String keyword) {
-        ModelAndView modelAndView = new ModelAndView("search");
+        var modelAndView = new ModelAndView("search");
         modelAndView.addObject("result", productService.getSearchResult(keyword));
         return modelAndView;
     }

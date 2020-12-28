@@ -16,10 +16,10 @@ public class ProductDataAccessObjectImplementation implements ProductDAO {
 
     @Override
     public List<Product> getSearchResult(String keyword) {
-        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
-        TypedQuery<Product> query = session.createQuery("from Product where name like concat('%', :keyword, '%')", Product.class);
+        var session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        var query = session.createQuery("from Product where name like concat('%', :keyword, '%')", Product.class);
         query.setParameter("keyword", keyword);
-        List<Product> products = query.getResultList();
+        var products = query.getResultList();
         session.close();
         logger.info("The search result is successfully loaded...");
         return products;
@@ -27,8 +27,8 @@ public class ProductDataAccessObjectImplementation implements ProductDAO {
 
     @Override
     public List<Product> getProductList() {
-        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
-        List<Product> products = session.createQuery("from Product", Product.class).list();
+        var session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        var products = session.createQuery("from Product", Product.class).list();
         session.close();
         logger.info("All products is successfully loaded...");
         return products;
@@ -36,8 +36,8 @@ public class ProductDataAccessObjectImplementation implements ProductDAO {
 
     @Override
     public Product getProductById(int id) {
-        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
-        Product product = session.get(Product.class, id);
+        var session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        var product = session.get(Product.class, id);
         session.close();
         logger.info("The " + product.getName() + "is successfully loaded...");
         return product;
@@ -45,8 +45,8 @@ public class ProductDataAccessObjectImplementation implements ProductDAO {
 
     @Override
     public void save(Product product) {
-        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
-        Transaction transaction = session.beginTransaction();
+        var session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        var transaction = session.beginTransaction();
         session.save(product);
         transaction.commit();
         session.close();
@@ -55,8 +55,8 @@ public class ProductDataAccessObjectImplementation implements ProductDAO {
 
     @Override
     public void delete(Product product) {
-        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
-        Transaction transaction = session.beginTransaction();
+        var session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        var transaction = session.beginTransaction();
         session.delete(product);
         transaction.commit();
         session.close();

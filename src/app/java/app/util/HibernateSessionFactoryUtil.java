@@ -15,9 +15,9 @@ public class HibernateSessionFactoryUtil {
     public static SessionFactory getSessionFactory() {
 
         if (sessionFactory == null) {
-            Configuration configuration = new Configuration().configure();
+            var configuration = new Configuration().configure();
             configuration.addAnnotatedClass(Product.class);
-            StandardServiceRegistryBuilder registryBuilder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
+            var registryBuilder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
             sessionFactory = configuration.buildSessionFactory(registryBuilder.build());
         }
 
