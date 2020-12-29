@@ -1,5 +1,5 @@
 # product-manager-spring-mvc-project
-<h3>Web application that allows to manage products. The user can create and delete different products. Also implemented an opportunity to search products by keyword.</h3>
+<h3>Web application that allows to manage products. The user can create & delete different them. Also implemented an opportunity to search products by keyword.</h3>
 <h2>Overview:</h2>
 <ul>
   <li><h2>Structure</h2>
